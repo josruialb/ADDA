@@ -10,7 +10,7 @@ public class P1_1 {
 //P1.1-Dada una lista de String buscar la cadena que tiene un mayor número de caracteres en minúscula.
 //a) Implementar una solución iterativa (C y JAVA).  X/2
 //b) Implementar una solución con stream en JAVA 10.   X
-//c) Implementar una solución recursiva lineal final (C y JAVA).  
+//c) Implementar una solución recursiva lineal final (C y JAVA).   X/2
 //d) Definir los tamaños y calcular los T(n) para las distintas funciones implementadas considerando los casos mejor y peor.   
 
 	
@@ -94,9 +94,11 @@ public class P1_1 {
 				return Ej1RecFinal(ls, ls.get(i+1), i+1);
 			}
 			return Ej1RecFinal(ls, g, i+1);
-		} else {
+		} else if(cuentaMinRec(ls.get(i), 0, 0) > cuentaMinRec(g, 0, 0)) {
+			
 			return Ej1RecFinal(ls,ls.get(i), i+1);
 		}
+	return g;
 	}
 	
 	
@@ -106,7 +108,7 @@ public class P1_1 {
 		e1.add("aaaaaaa");
 		e1.add("eedf");
 		e1.add("aaaaasvdsvsdvsab");
-		e1.add("aaweFFFFsaaa");
+		e1.add("aaweFFFFsaahhhhhhjjnbkkkka");
 		e1.add("DDsssDDDD");
 		
 		
