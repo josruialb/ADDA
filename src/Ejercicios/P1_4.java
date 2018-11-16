@@ -63,7 +63,7 @@ public class P1_4 {
 		return IntStream.range(0, l1.size() + l2.size()).boxed().map(c -> compara(l1, l2)).collect(Collectors.toList());
 
 	}
-
+//metodo funcional 
 	private static Integer compara(List<Integer> l1, List<Integer> l2) {
 		Integer res = 0;
 		if (l1.size() == pos1) {
